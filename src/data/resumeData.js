@@ -84,11 +84,11 @@ export const hardSkills = [
 ];
 
 export const contextualHardSkills = [
-  "Experiência com atendimento ao cliente",
-  "Noções de Marketing Digital e Jornada do Cliente",
-  "Conhecimento com plataformas de anúncio (Facebook Ads/Meta Ads)",
-  "Experiência básica com criação de conteúdo",
-  "Experiência com roteirização, captação e edição de vídeo",
+  "Experiência com atendimento ao cliente;",
+  "Noções de Marketing Digital e Jornada do Cliente;",
+  "Conhecimento com plataformas de anúncio (Facebook Ads/Meta Ads);",
+  "Experiência básica com criação de conteúdo;",
+  "Experiência com roteirização, captação e edição de vídeo.",
 ];
 
 export const softSkills = [
@@ -107,3 +107,10 @@ export const languages = [
   { language: "Inglês", level: 2 },
   { language: "Espanhol", level: 2 },
 ];
+
+export const profissionalResume = [
+  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam quo quidem possimus. Saepe incidunt maiores amet beatae, quidem excepturi sequi ex nemo sint necessitatibus autem temporibus velit eum ad.',
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quasi quas repellendus, voluptatum minima nemo culpa, adipisci assumenda possimus tenetur fugiat impedit vel voluptate? Consectetur cupiditate amet quod corrupti quam.",
+  "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id veniam labore sequi tenetur. Soluta magni fugiat quasi laborum, libero, ab assumenda officiis illo temporibus fugit alias eos, eaque voluptate vero."
+];
+

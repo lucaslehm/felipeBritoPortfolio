@@ -3,6 +3,7 @@ import MainSubTitle from "../shared/components/MainSubTitle";
 import ExperienceCard from "./components/ExperienceCard";
 import EducationCard from "./components/EducationCard";
 import HardSkill from "./components/HardSkill";
+
 import {
   experiences,
   education,
@@ -10,7 +11,11 @@ import {
   contextualHardSkills,
   softSkills,
   languages,
+  profissionalResume,
 } from "../../data/resumeData";
+import ResumeLists from "./components/ResumeLists";
+import ProfResume from "./components/ProfResume";
+import LanguageCard from "./components/LanguageCard";
 
 function Resume() {
   return (
@@ -65,10 +70,30 @@ function Resume() {
           </div>
 
           <MainSubTitle>HardSkills Complementares</MainSubTitle>
+
+          <ResumeLists itens={contextualHardSkills} />
         </div>
 
         {/* Coluna 3 */}
-        <div></div>
+        <div className="flex flex-col gap-4">
+          <MainSubTitle>SoftSkills</MainSubTitle>
+
+          <ResumeLists itens={softSkills} />
+
+          <MainSubTitle>Resumo Profissional</MainSubTitle>
+
+          <ProfResume resumeParagraphs={profissionalResume} />
+
+          <MainSubTitle>Idiomas</MainSubTitle>
+
+          {languages.map((item, index) => (
+            <LanguageCard
+              key={index}
+              languageName={item.language}
+              level={item.level}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -1,10 +1,10 @@
 import { RiArrowDownSLine } from "@remixicon/react";
 
-function ResumeLists({ itens }) {
+function ProfResume({ resumeParagraphs }) {
   return (
     <div className="ring-3 ring-[#461901] shadow-[5px_5px_0px_#461901] w-[338px]">
       <div className="flex items-center justify-between p-2 ring-3 ring-[#461901] bg-orange-200">
-        <span className="text-orange-600 font-semibold">Habilidades</span>
+        <span className="text-orange-600 font-semibold">Por quê eu?</span>
         <div className="flex items-center">
           <RiArrowDownSLine
             className="
@@ -14,14 +14,16 @@ function ResumeLists({ itens }) {
       </div>
 
       <div className="p-4 flex flex-col gap-2">
-        <ul className="list-disc">
-          {itens.map((li, i) => {
-            return <li className="ml-4 text-orange-950" key={i}>{li}</li>;
-          })}
-        </ul>
+        {resumeParagraphs.map((p, i) => {
+          return (
+            <p className="text-orange-950" key={i}>
+              {p}
+            </p>
+          );
+        })}
       </div>
     </div>
   );
 }
 
-export default ResumeLists;
+export default ProfResume;

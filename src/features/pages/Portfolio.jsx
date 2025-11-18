@@ -1,4 +1,5 @@
 import Introduction from "../introduction/Introduction";
+import ProjectsInline from "../projectsInline/ProjectsInline";
 import Resume from "../resume/Resume";
 import Header from "../shared/components/Header";
 
@@ -8,6 +9,8 @@ function Portfolio() {
       <Header />
 
       <Introduction />
+
+      <ProjectsInline />
 
       <Resume />
     </div>
