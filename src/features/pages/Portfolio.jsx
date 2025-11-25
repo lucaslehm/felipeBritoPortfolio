@@ -1,3 +1,4 @@
+import AboutMe from "../aboutMe/AboutMe";
 import Contact from "../contact/Contact";
 import Introduction from "../introduction/Introduction";
 import ProjectsInline from "../projectsInline/ProjectsInline";
@@ -19,6 +20,8 @@ function Portfolio() {
       <Resume />
 
       <Contact />
+
+      <AboutMe />
     </div>
   );
 }
