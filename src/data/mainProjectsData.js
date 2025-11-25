@@ -9,7 +9,7 @@ export const mainProjects = [
     coverUrl: "[Colar url aqui]",
     projectName: "Criativos",
     description:
-      "Veja os criativos que fizeram as pessoas pararem de rolar o feed"
+      "Veja os criativos que fizeram as pessoas pararem de rolar o feed, desenvolvidos para ter alta conversão"
   },
   {
     coverUrl: "[Colar url aqui]",

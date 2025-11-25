@@ -109,8 +109,7 @@ export const languages = [
 ];
 
 export const profissionalResume = [
-  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam quo quidem possimus. Saepe incidunt maiores amet beatae, quidem excepturi sequi ex nemo sint necessitatibus autem temporibus velit eum ad.',
-  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quasi quas repellendus, voluptatum minima nemo culpa, adipisci assumenda possimus tenetur fugiat impedit vel voluptate? Consectetur cupiditate amet quod corrupti quam.",
-  "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id veniam labore sequi tenetur. Soluta magni fugiat quasi laborum, libero, ab assumenda officiis illo temporibus fugit alias eos, eaque voluptate vero."
+  "Minha base começou em 2015, criando miniaturas de vídeo para YouTube e trabalhando como freelancer para grandes influenciadores. Essa experiência desenvolveu meu olhar para estética, identidade visual e narrativa.",
+  "Com o tempo, ampliei meus conhecimentos para o universo digital, aprofundando-me em design, estratégia de conteúdo e construção de marcas. Hoje, desenvolvo materiais criativos, funcionais e alinhados às necessidades do público.",
+  "Minhas experiências fortaleceram habilidades como comunicação, organização e visão estratégica. Estou em constante evolução e busco uma oportunidade onde eu possa aplicar minhas habilidades, aprender e contribuir para resultados reais em equipe."
 ];
-
