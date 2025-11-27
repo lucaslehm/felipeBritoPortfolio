@@ -1,5 +1,6 @@
 import AboutMe from "../aboutMe/AboutMe";
 import Contact from "../contact/Contact";
+import Footer from "../footer/Footer";
 import Introduction from "../introduction/Introduction";
 import ProjectsInline from "../projectsInline/ProjectsInline";
 import Resume from "../resume/Resume";
@@ -22,6 +23,8 @@ function Portfolio() {
       <Contact />
 
       <AboutMe />
+
+      <Footer />
     </div>
   );
 }
