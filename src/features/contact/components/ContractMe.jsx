@@ -24,6 +24,7 @@ function ContractMe() {
         <p className="font-medium text-orange-950">{contractMe.text}</p>
 
         <a
+          target="_blank"
           href="https://wa.me/5544999295884?text=Fala%20Felipe!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20uma%20entrevista."
           className="flex bg-green-500 w-90 h-13 items-center justify-between px-4 ring-3 ring-[#01460d] shadow-[5px_5px_0px_#01460d] text-white font-semibold text-[1.1em] cursor-pointer transition-all hover:scale-101 hover:bg-green-600"
         >

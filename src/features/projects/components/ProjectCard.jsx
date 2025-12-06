@@ -41,7 +41,7 @@ export default function ProjectCard({
               <p className="text-orange-900 mt-3">{projectDescription}</p>
             </div>
 
-            <div className="mt-4">
+            <div className="mt-4 overflow-hidden">
               <GalleryInlineSlider
                 galery={projectGalery}
                 onClickItem={(i) => {
