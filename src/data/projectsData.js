@@ -77,7 +77,7 @@ const projects = [
         projetcName: "Colégio PRO",
         projectDescription:
           "Design de peças para redes sociais do colégio, seguindo a identidade visual e comunicando de forma clara e atrativa.",
-        projectCoverURL: "https://i.ibb.co/gLSm4R7x/08-stories.jpg",
+        projectCoverURL: "https://i.ibb.co/LdYLLFc5/12-feed.jpg",
         projectGalery: [
           "https://i.ibb.co/ZRZWLtsM/01-feed.jpg",
           "https://i.ibb.co/PZHdrYc4/01-stories.jpg",
@@ -91,7 +91,6 @@ const projects = [
           "https://i.ibb.co/zT0YvPLp/06-feed.jpg",
           "https://i.ibb.co/6JrYFRFQ/07-feed.jpg",
           "https://i.ibb.co/XxvtpXYC/08-feed.jpg",
-          "https://i.ibb.co/gLSm4R7x/08-stories.jpg",
           "https://i.ibb.co/DfYYMVTp/11-feed.jpg",
           "https://i.ibb.co/Q7vy1NMV/11-feed-v2.jpg",
           "https://i.ibb.co/LdYLLFc5/12-feed.jpg",
@@ -113,7 +112,6 @@ const projects = [
           "https://i.ibb.co/ymvhXxv8/02-feed.jpg",
           "https://i.ibb.co/GvMG0KQq/03-feed.jpg",
           "https://i.ibb.co/SDMnbYvL/03-stories.jpg",
-          "https://i.ibb.co/238qSthm/04-feed.jpg",
         ],
       },
 

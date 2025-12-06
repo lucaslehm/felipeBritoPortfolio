@@ -5,3 +5,19 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+
+
+/* Chrome, Safari e Edge */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+
+/* IE */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+}

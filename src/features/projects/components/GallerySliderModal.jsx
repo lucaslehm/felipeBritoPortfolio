@@ -1,4 +1,8 @@
-import { RiCloseLine, RiArrowLeftSLine, RiArrowRightSLine } from "@remixicon/react";
+import {
+  RiCloseLine,
+  RiArrowLeftSLine,
+  RiArrowRightSLine,
+} from "@remixicon/react";
 import { useEffect, useState } from "react";
 
 function getYouTubeId(url) {
@@ -6,14 +10,19 @@ function getYouTubeId(url) {
     const u = new URL(url);
     if (u.hostname.includes("youtu.be")) return u.pathname.slice(1);
     if (u.searchParams.has("v")) return u.searchParams.get("v");
-    if (u.pathname.includes("/embed/")) return u.pathname.split("/embed/").pop();
+    if (u.pathname.includes("/embed/"))
+      return u.pathname.split("/embed/").pop();
     return null;
   } catch {
     return null;
   }
 }
 
-export default function GallerySliderModal({ images = [], startIndex = 0, onClose }) {
+export default function GallerySliderModal({
+  images = [],
+  startIndex = 0,
+  onClose,
+}) {
   const [current, setCurrent] = useState(startIndex);
   const [loadedIframes, setLoadedIframes] = useState(new Set());
 
@@ -57,7 +66,11 @@ export default function GallerySliderModal({ images = [], startIndex = 0, onClos
         {/* header */}
         <div className="p-3 bg-orange-400 ring-3 ring-[#461901] flex justify-between items-center">
           <span className="font-bold text-orange-950">Galeria</span>
-          <RiCloseLine size={24} className="cursor-pointer text-orange-900" onClick={onClose} />
+          <RiCloseLine
+            size={24}
+            className="cursor-pointer text-orange-900"
+            onClick={onClose}
+          />
         </div>
 
         {/* content */}
@@ -65,7 +78,7 @@ export default function GallerySliderModal({ images = [], startIndex = 0, onClos
           {/* Prev */}
           <RiArrowLeftSLine
             size={48}
-            className="absolute left-4 text-orange-800 cursor-pointer z-20"
+            className="absolute left-4 text-orange-800 cursor-pointer z-20 ring-3 ring-[#461901] shadow-[4px_4px_0px_#461901] bg-amber-100"
             onClick={prev}
           />
 
@@ -80,7 +93,9 @@ export default function GallerySliderModal({ images = [], startIndex = 0, onClos
                 loadedIframes.has(current) ? (
                   <iframe
                     title={`video-${current}`}
-                    src={`https://www.youtube.com/embed/${getYouTubeId(images[current])}?rel=0&showinfo=0`}
+                    src={`https://www.youtube.com/embed/${getYouTubeId(
+                      images[current]
+                    )}?rel=0&showinfo=0`}
                     className="w-full h-full"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -89,11 +104,15 @@ export default function GallerySliderModal({ images = [], startIndex = 0, onClos
                   // placeholder thumbnail that loads iframe when clicked
                   <div className="w-full h-full flex items-center justify-center">
                     <button
-                      onClick={() => setLoadedIframes((s) => new Set(s).add(current))}
+                      onClick={() =>
+                        setLoadedIframes((s) => new Set(s).add(current))
+                      }
                       className="flex flex-col items-center gap-2"
                     >
                       <img
-                        src={`https://img.youtube.com/vi/${getYouTubeId(images[current])}/hqdefault.jpg`}
+                        src={`https://img.youtube.com/vi/${getYouTubeId(
+                          images[current]
+                        )}/hqdefault.jpg`}
                         alt="video-thumb"
                         className="max-h-[70vh] object-contain"
                         loading="lazy"
@@ -108,7 +127,7 @@ export default function GallerySliderModal({ images = [], startIndex = 0, onClos
                 <img
                   src={images[current]}
                   alt={`img-${current}`}
-                  className="max-h-[75vh] max-w-full object-contain transition-opacity duration-500"
+                  className="max-h-[50vh] max-w-[80%] object-contain transition-opacity duration-500 ring-3 ring-[#461901]"
                   loading="lazy"
                 />
               )}
@@ -118,7 +137,7 @@ export default function GallerySliderModal({ images = [], startIndex = 0, onClos
           {/* Next */}
           <RiArrowRightSLine
             size={48}
-            className="absolute right-4 text-orange-800 cursor-pointer z-20"
+            className="absolute right-4 text-orange-800 cursor-pointer z-20 ring-3 ring-[#461901] shadow-[4px_4px_0px_#461901] bg-amber-100"
             onClick={next}
           />
         </div>
@@ -127,16 +146,25 @@ export default function GallerySliderModal({ images = [], startIndex = 0, onClos
         <div className="p-3 border-t border-orange-200 overflow-x-auto flex gap-3">
           {images.map((it, idx) => {
             const vid = getYouTubeId(it);
-            const thumb = vid ? `https://img.youtube.com/vi/${vid}/mqdefault.jpg` : it;
+            const thumb = vid
+              ? `https://img.youtube.com/vi/${vid}/mqdefault.jpg`
+              : it;
             return (
               <div
                 key={idx}
                 onClick={() => setCurrent(idx)}
                 className={`w-24 h-16 shrink-0 cursor-pointer ring-3 ring-[#461901] overflow-hidden ${
-                  idx === current ? "shadow-[4px_4px_0px_#461901] scale-105" : "opacity-90"
+                  idx === current
+                    ? "shadow-[4px_4px_0px_#461901] scale-105"
+                    : "opacity-90"
                 } transition-all duration-300`}
               >
-                <img src={thumb} alt={`t-${idx}`} className="w-full h-full object-cover" loading="lazy" />
+                <img
+                  src={thumb}
+                  alt={`t-${idx}`}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
             );
           })}
