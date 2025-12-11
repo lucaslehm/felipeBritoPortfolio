@@ -10,12 +10,12 @@ function Header() {
     <header className="bg-orange-200 ring-3 relative">
       <div className="max-w-[1118px] m-auto flex items-center justify-between px-6 py-4">
         {/* LOGO */}
-        <div className="flex items-center gap-4">
+        <a href="#top" className="flex items-center gap-4 cursor-pointer">
           <LogoFelipeBrito />
           <span className="font-bold text-2xl text-orange-950">
             Felipe Brito
           </span>
-        </div>
+        </a>
 
         {/* NAV NORMAL (desktop) */}
         <div className="hidden md:block">

@@ -1,29 +1,25 @@
+import { RiBehanceFill } from "@remixicon/react";
 import AboutMe from "../aboutMe/AboutMe";
 import Contact from "../contact/Contact";
 import Footer from "../footer/Footer";
 import Introduction from "../introduction/Introduction";
-import ProjectsInline from "../projectsInline/ProjectsInline";
 import Resume from "../resume/Resume";
 import ServicesInline from "../servicesInline/ServicesInline";
-import Header from "../shared/components/Header";
 
 function Portfolio() {
   return (
-    <div className="bg-amber-50">
-      <Header />
+    <div id="top" className="bg-amber-50">
+      <Introduction id="introduction" />
+      <ServicesInline id="services" />
 
-      <Introduction />
+      <a href="https://www.behance.net/felipebrito39" target="_blank" className="flex gap-6 items-center justify-center bg-amber-500 py-5 mt-15">
+        {" "}
+        <RiBehanceFill size={35} /> <span className="text-3xl font-bold">PORTFOLIO</span> <RiBehanceFill size={35} />
+      </a>
 
-      <ProjectsInline />
-
-      <ServicesInline />
-
-      <Resume />
-
-      <Contact />
-
-      <AboutMe />
-
+      <Resume id="resume" />
+      <Contact id="contact" />
+      <AboutMe id="about" />
       <Footer />
     </div>
   );

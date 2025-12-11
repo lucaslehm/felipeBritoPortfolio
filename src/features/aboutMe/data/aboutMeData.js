@@ -1,6 +1,6 @@
 export const peopleCard = {
   myInfo: {
-    coverProfileURL: "https://i.ibb.co/TqcbHKf7/foto-Leao-Down.jpg",
+    coverProfileURL: "https://i.ibb.co/WWJgnFHg/image.png",
     fullName: "Claudio Felipe Leão Brito",
     role: "Designer Gráfico",
   },
